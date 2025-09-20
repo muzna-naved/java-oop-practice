@@ -4,7 +4,7 @@ import java.net.*;
 public class WebPageReader {
     public static void main(String[] args) {
         try {
-            URL url = new URL("https://uok.edu.pk/"); // Replace with your URL
+            URL url = new URL("https://uok.edu.pk/"); // URL
             InputStreamReader isr = new InputStreamReader(url.openStream());
             BufferedReader reader = new BufferedReader(isr);
 
@@ -13,11 +13,12 @@ public class WebPageReader {
                 System.out.println(line); // Print or save each line
             }
 
-            reader.close(); // Always close the reader
+            reader.close(); // close the reader
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 }
+
 
 
